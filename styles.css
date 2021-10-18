@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  /*main background*/
+  --Very-dark-blue: hsl(233, 47%, 7%);
+  /*card background*/
+  --Dark-desaturated-blue: hsl(244, 38%, 16%);
+  /*accent*/
+  --Soft-violet: hsl(277, 64%, 61%);
+  /* Neutral */
+
+  /*main heading, stats*/
+  --White: hsl(0, 0%, 100%);
+  /*main paragraph*/
+  --Slightl-transparent-white: hsla(0, 0%, 100%, 0.75);
+  /*stat headings*/
+  --Slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+  --light-paragraph: "Inter", sans-serif;
+  --dark-paragraph: "Lexend Deca", sans-serif;
+}
+body {
+  font-size: 15px;
+  background-color: var(--Very-dark-blue);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 900px;
+  height: 380px;
+  justify-content: center;
+
+  background-color: var(--Dark-desaturated-blue);
+  margin: auto;
+  margin-top: 19vh;
+}
+.description {
+  margin: 5%;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.head h1 {
+  font-family: var(--dark-paragraph);
+  color: var(--White);
+  margin-bottom: 2rem;
+}
+.head h1 span {
+  color: var(--Soft-violet);
+}
+
+/*Heading paragraph*/
+
+.head-des {
+  font-family: var(--light-paragraph);
+  color: var(--White);
+}
+
+/*Stats*/
+
+.statistics {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.statistics-det {
+  display: block;
+  margin: 0.5rem 1rem 0.5rem 0rem;
+}
+.statistics-number {
+  font-family: var(--dark-paragraph);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--Slightl-transparent-white);
+  display: block;
+}
+.statistics-name {
+  font-family: var(--light-paragraph);
+  color: var(--Slightl-transparent-white);
+  font-weight: 400;
+  font-size: 0.8rem;
+  display: block;
+}
+/*Banner Image*/
+
+.home-page-banner {
+  background-image: url("/images/image-header-desktop.jpg");
+  background-color: var(--Soft-violet);
+  background-blend-mode: hard-light;
+  width: 100%;
+  background-size: cover;
+}
+
+/*Footer*/
+footer p {
+  font-family: var(--light-paragraph);
+  color: var(--Slightl-transparent-white);
+  font-size: 13px;
+  text-align: center;
+  margin-top: 2rem;
+}
+footer p a {
+  text-decoration: none;
+  color: var(--Soft-violet);
+}
+/*For Responsive layout*/
+
+@media (max-width: 375px) {
+}
