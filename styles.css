@@ -45,7 +45,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--Dark-desaturated-blue);
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 30px;
 
   /* you can give overflow hidden to parent so you wont need to give border radius to childrens */
   overflow: hidden;
@@ -156,7 +156,6 @@ footer p a {
     text-align: center;
     margin: auto;
     margin-top: 1.4vh;
-    border-radius: 30px;
     margin-top: 50px;
   }
   .description {
